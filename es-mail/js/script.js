@@ -1,4 +1,10 @@
-const mailList = ["alessia.franchi@gmail.com", "rossi@libero.it", "ilaria.verdi@tiscali.com"];
+const mailList = [
+  "alessia.franchi@gmail.com",
+  "rossi@libero.it",
+  "ilaria.verdi@tiscali.com",
+  "matteo.riccetti@yahoo.it",
+  "gianni.calenda@gmail.com"
+];
 
 const btnInput = document.getElementById("insert-btn");
 let output = document.getElementById("result");
