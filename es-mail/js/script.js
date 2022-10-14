@@ -1,13 +1,12 @@
 const mailList = [
   "alessia.franchi@gmail.com",
-  "rossi@libero.it",
+  "rossi.davide@libero.it",
   "ilaria.verdi@tiscali.com",
   "matteo.riccetti@yahoo.it",
   "gianni.calenda@gmail.com"
 ];
 
 const btnInput = document.getElementById("insert-btn");
-
 btnInput.addEventListener("click", function() {
   let output = document.getElementById("result");
   const userMail = prompt("Inserisci qui il tuo indirizzo mail");
@@ -24,9 +23,13 @@ btnInput.addEventListener("click", function() {
       }
     }
     if (isUserMail) {
-    output.innerHTML = "Sei già iscritto alla newsletter";
+    output.innerHTML = `
+    La mail "${userMail.toLowerCase()}" è già presente nei nostri archivi.
+    `;
     }  else {
-    output.innerHTML = "Non sei ancora iscritto alla newsletter, puoi procedere all'iscrizione";
+    output.innerHTML = `
+    La mail "${userMail.toLowerCase()}" non è presente nei nostri archivi, puoi procedere all'iscrizione!
+    `;
     }
 
   } else {
