@@ -7,22 +7,29 @@ const mailList = [
 ];
 
 const btnInput = document.getElementById("insert-btn");
-let output = document.getElementById("result");
 
 btnInput.addEventListener("click", function() {
-  output.innerHTML = "";
+  let output = document.getElementById("result");
   const userMail = prompt("Inserisci qui il tuo indirizzo mail");
   let isUserMail = false;
-
-  for (let i = 0; i < mailList.length; i++) {
+  
+  if (userMail.toLowerCase()
+  .match(
+    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  )) {
+    
+    for (let i = 0; i < mailList.length; i++) {
     if (mailList[i] === userMail) {
       isUserMail = true;
+      }
     }
-  }
     if (isUserMail) {
     output.innerHTML = "Sei già iscritto alla newsletter";
-  }  else {
+    }  else {
     output.innerHTML = "Non sei ancora iscritto alla newsletter, puoi procedere all'iscrizione";
-  }
+    }
 
+  } else {
+    alert("Indirizzo e-mail non valido")
+  }
 })
