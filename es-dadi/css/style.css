@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #1284ab;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+}
+
+h3 {
+  margin: 2rem;
+}
+
+#dice {
+  width: 300px;
+}
+
+ button {
+  background-color: #1284ab;
+  border: 0;
+  cursor: pointer;
+ }
+
+ p {
+  margin: 2rem;
+ }
+
+ #pc-output, #user-output {
+  font-size: 2rem;
+ }
+
+ #result {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+ }
+
+ #smile, #sad, #strenght {
+  width: 100px;
+ }
+
+ .hide {
+  display: none;
+ }
+
+ .visible {
+  display: inline-block;
+ }

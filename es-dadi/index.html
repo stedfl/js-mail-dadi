@@ -8,13 +8,21 @@
   <title>Gioco dei dadi</title>
 </head>
 <body>
-  <h1>Gioca con il computer, tira i dati e vediamo chi vince!</h1>
-  <button id="dice-btn">Tira i dadi</button>
-  <p id="pc-output"></p>
-  <p id="user-output"></p>
-  <p id="result"></p>
-
-
+  <div class="container">
+    <h1>GIOCO DEI DADI</h1>
+    <h3>Istruzioni: clicca sul dado rosso per tirare i dati, attendi il risultato e vediamo chi vince!</h3>
+  
+    <button id="dice-btn">
+      <img id="dice" src="img/dice.png" alt="dice">
+    </button>
+    <p id="pc-output"></p>
+    <p id="user-output"></p>
+    <p id="result"></p>
+    <img id="sad" class="hide" src="img/sad-icon.svg" alt="sad icon">
+    <img id="smile" class="hide" src="img/smiley-icon.svg" alt="smile icon">
+    <img id="strenght" class="hide" src="img/strength-icon.svg" alt="strength-icon">
+  </div>
+  
   <script src="js/script.js"></script>
   
 </body>
